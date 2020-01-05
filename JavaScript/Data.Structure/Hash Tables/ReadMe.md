@@ -8,17 +8,18 @@ Every programming language has there own Hash Table. In **JavaScript**, it's **O
 
 ## What is a Hash Function?
 
-A hash function simply generates a hash value for a given value which then turned into a memory address. As a result, we can store the values in a particular address and can retrive them from that address using the hash function.
+A hash function simply generates a hashed number for a given value which then turned into a memory address. As a result, we can store the values in a particular address and can retrive them from that address using the hash function.
 You can visit [miraclesalad](http://www.miraclesalad.com/webtools/md5.php) to get a taste of the hashed values.
 
 ## Time Complexity
 
+In many situations, hash tables turn out to be on average more efficient than search trees or any other table lookup structure. For this reason, they are widely used in many kinds of computer software, particularly for associative arrays, database indexing, caches, and sets.
 ![](../../images/hash_table_time_complexity.png)
 
 ## What is Hash Collisions?
 
 Ideally, the hash function will assign each key to a unique bucket, but most hash table designs employ an imperfect hash function, which might cause hash collisions where the hash function generates the same index for more than one key. Such collisions are always accommodated in some way.
-
-In a well-dimensioned hash table, the average cost (number of instructions) for each lookup is independent of the number of elements stored in the table. Many hash table designs also allow arbitrary insertions and deletions of key-value pairs, at (amortized[2]) constant average cost per operation.[3][4]
-
-In many situations, hash tables turn out to be on average more efficient than search trees or any other table lookup structure. For this reason, they are widely used in many kinds of computer software, particularly for associative arrays, database indexing, caches, and sets.
+You can play with the hash table in [OpenHash](https://www.cs.usfca.edu/~galles/visualization/OpenHash.html). Try inserting 1, 3 and 55. We'll notice there is a same address for both 3 and 55.
+![](../../images/hash_collition.png)
+Though it's solved by the programming languages using different methods such as linked list. Visit [Wikipides](https://www.cs.usfca.edu/~galles/visualization/OpenHash.html) to more about hash tables.
+![](../../images/hash_linked.png)
