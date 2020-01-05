@@ -25,7 +25,11 @@ Ideally, the hash function will assign each key to a unique bucket, but most has
 Theoretically, when a collision happened, it slows down reading and writing with a hash table in O(n/k) or O(n), where k is the size of the hash table.
 
 You can play with the hash table in [OpenHash](https://www.cs.usfca.edu/~galles/visualization/OpenHash.html). Try inserting 1, 3 and 55. We'll notice there is a same address for both 3 and 55.
+<<<<<<< HEAD
 ![](../../images/hash_collitions.png)
+=======
+![](../../images/hash_collition.png)
+>>>>>>> 5f2defa3c1a23e4ee2fcd68a11a1a60f1816b4ec
 
 Though it's solved by the programming languages using different methods such as linked list. Visit [Wikipides](https://www.cs.usfca.edu/~galles/visualization/OpenHash.html) to more about hash tables.
 ![](../../images/hash_linked.png)
