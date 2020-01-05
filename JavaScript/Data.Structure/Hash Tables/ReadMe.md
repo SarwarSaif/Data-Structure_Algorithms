@@ -1,8 +1,15 @@
-# What is Hash Table?
+# Hash Tables
+
+## What is Hash Table?
 
 ### In computing, a hash table (hash map) is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found.
 
 Every programming language has there own Hash Table. In **JavaScript**, it's **Object**. In **Python**, it's a **Dictionary**.
+
+## What is a Hash Function?
+
+A hash function simply generates a hash value for a given value which then turned into a memory address. As a result, we can store the values in a particular address and can retrive them from that address using the hash function.
+You can visit [miraclesalad](http://www.miraclesalad.com/webtools/md5.php) to get a taste of the hashed values.
 
 Ideally, the hash function will assign each key to a unique bucket, but most hash table designs employ an imperfect hash function, which might cause hash collisions where the hash function generates the same index for more than one key. Such collisions are always accommodated in some way.
 
