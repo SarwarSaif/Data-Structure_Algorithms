@@ -27,13 +27,14 @@ Though it's solved by the programming languages using different methods such as 
 
 In many situations, hash tables turn out to be on average more efficient than search trees or any other table lookup structure. For this reason, they are widely used in many kinds of computer software, particularly for associative arrays, database indexing, caches, and sets.
 
-# Pros
+### Pros
 
 1. Fast lookups (Good Collision resolution needed or lookup can go upto O(n)).
 2. Fast inserts.
 3. Flexible keys.
+4. With hash tables, we can optimize the nested loops to have O(n) time complexity.
 
-# Cons
+### Cons
 
 1. Unordered.
 2. Slow key iteration.
