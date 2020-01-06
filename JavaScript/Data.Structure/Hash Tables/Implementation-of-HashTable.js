@@ -1,3 +1,5 @@
+const _hash = Symbol("_hash");
+
 class HashTable {
   constructor(size) {
     this.data = new Array(size);
@@ -7,8 +9,13 @@ class HashTable {
   _hash function is created to create a pseudo hash address
   to create the hash table using a hash function
   similar to the native hash library funtion does
+  *** This method won't get access by the users.
+      So, I have made it private.
+      visit the link https://medium.com/@davidrhyswhite/private-members-in-es6-db1ccd6128a5 
+      to more about private properties in ES6 
+  ***
   */
-  _hash(key) {
+  [_hash](key) {
     let hash = 0;
     for (let i = 0; i < key.length; i++) {
       hash = (hash + key.charCodeAt(i) * i) % this.data.length;
@@ -18,7 +25,7 @@ class HashTable {
 
   set(key, value) {
     // Convert the key into hash
-    let hashed_address = this._hash(key);
+    let hashed_address = this[_hash](key);
     // Store the data in hased address
     // Check if the address is not already assigned with a value
     if (!this.data[hashed_address]) {
@@ -47,7 +54,7 @@ class HashTable {
 
   get(key) {
     // Convert the key into hash
-    let hashed_address = this._hash(key);
+    let hashed_address = this[_hash](key);
     if (this.data[hashed_address]) {
       // Check if the hash address contains any value
       for (let i = 0; i < this.data[hashed_address].length; i++) {
@@ -65,10 +72,10 @@ class HashTable {
 }
 
 const hashMe = new HashTable(50);
-console.log(hashMe._hash("asd"));
+
 hashMe.set("asd", 10000);
 console.log(hashMe.get("asd"));
-
+//console.log(hashMe._hash('aff'))
 hashMe.set("asda", 10340);
 console.log(hashMe.get("asda"));
 
