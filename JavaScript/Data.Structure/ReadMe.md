@@ -8,4 +8,4 @@ Insert takes only O(1) in case of hash tables regardless of collitions as good h
 
 Hash table has the disadvantage of not having oreder index whereas Arrays got a ordered indecis.
 
-![](../../images/arrayvshash.png)
+![](../images/arrayvshash.png)
