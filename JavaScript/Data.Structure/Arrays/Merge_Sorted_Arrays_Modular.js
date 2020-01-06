@@ -39,7 +39,7 @@ const mergeSortedArrays = (arr_1, arr_2) => {
 
 function mergeTwo(arr1, arr2) {
   let result = [...arr1, ...arr2];
-  console.log(result);
+  //console.log(result);
   return result.sort((a, b) => a - b);
 }
 
