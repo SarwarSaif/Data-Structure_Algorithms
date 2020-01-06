@@ -29,3 +29,11 @@ You can play with the hash table in [OpenHash](https://www.cs.usfca.edu/~galles/
 
 Though it's solved by the programming languages using different methods such as linked list. Visit [Wikipides](https://www.cs.usfca.edu/~galles/visualization/OpenHash.html) to more about hash tables.
 ![](../../images/hash_linked.png)
+
+## Hash Tables in JavaScript (Object vs Map vs Set)
+
+In "Object", we can only use **String** as key and doesn't maintain Order in terms of storing the data in memory.
+
+But in "Map", we can use any types of **Datatype** as key and data is stored in Order.
+
+"Set" is another type of hash table in JS which is similar to map but only store the Key.
