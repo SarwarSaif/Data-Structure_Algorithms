@@ -32,7 +32,7 @@ In many situations, hash tables turn out to be on average more efficient than se
 1. Fast lookups (Good Collision resolution needed or lookup can go upto O(n)).
 2. Fast inserts.
 3. Flexible keys.
-4. With hash tables, we can optimize the nested loops to have O(n) time complexity.
+4. With hash tables, we can optimize the nested loops to have O(n) time complexity. (Most Important)
 
 ### Cons
 
