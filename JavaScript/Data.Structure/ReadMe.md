@@ -16,4 +16,4 @@ Both static arrays and dynamic arrays can increase their memories by allocating 
 
 Hash table has all the advantages compared to an Array but it's unordered.
 
-Linked List solve all of these problems.
+Linked List solve the problems of Insertion and Deletion which has time complexity of O(1).
