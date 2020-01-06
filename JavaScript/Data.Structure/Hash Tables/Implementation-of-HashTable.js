@@ -69,6 +69,30 @@ class HashTable {
   _get() {
     return this.data;
   }
+
+  keys() {
+    const keysArray = [];
+    if (this.data.length) {
+      // Check if there is any data
+      for (let i = 0; i < this.data.length; i++) {
+        // Traverse through the whole array
+        if (this.data[i]) {
+          // Check if the array is empty or not
+          if (this.data[i].length === 1) {
+            // If i-th address has only one hash array stored
+            keysArray.push(this.data[i][0][0]);
+          } else {
+            // If i-th address has multiple hash array stored
+            for (let j = 0; j < this.data[i].length; j++) {
+              keysArray.push(this.data[i][j][1]);
+            }
+          }
+        }
+      }
+    }
+
+    return keysArray;
+  }
 }
 
 const hashMe = new HashTable(50);
@@ -86,3 +110,5 @@ hashMe.set("asd", 10340);
 console.log(hashMe.get("asd"));
 
 console.log(hashMe._get());
+
+console.log(hashMe.keys());
