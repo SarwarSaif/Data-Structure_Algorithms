@@ -16,4 +16,8 @@ Both static arrays and dynamic arrays can increase their memories by allocating 
 
 Hash table has all the advantages compared to an Array but it's unordered.
 
-Linked List solve the problems of Insertion and Deletion which has time complexity of O(1).
+In Linked List, Insertion and Deletion operations are fast. Memory is allocated at runtime, as and when a new node is added. It's also known as Dynamic Memory Allocation.
+
+In case of Arrays, memory is allocated as soon as the array is declared, at compile time. It's also known as Static Memory Allocation.
+
+Array gets memory allocated in the Stack section. Whereas, linked list gets memory allocated in Heap section.
